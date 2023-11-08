@@ -62,11 +62,32 @@ function renderAnimals() { // output the 12 animals to the section
         <p>Characteristics:<br>${animal.traits}</p>`;
         infoDiv.className = 'divvy animal-info';
         divvy.appendChild(infoDiv);
+
+        // SOUND HINTS:
+        // Make an img and set the src to the sound icon in images folder.
+        // every divvy needs the sound icon, same icon each time.
+        // have the sound icon call a playSound() function when clicked.
+        // make a CSS class that positions the icon in the lower right corner of divvy
+        // make the icon small enough so as not to crowd other elements, but big enough
+        // so user can still tell it's a sound icon
+        // each icon img needs an eng property assigned to it so that the function
+        // can know which animal the icon belongs to
         
     }); // end forEach()
 } // end renderAnimals() function
 
 renderAnimals(); // render animals on page load; default order is by Eng, asc
+
+// SOUND HINTS:
+// make an Audio object for playing sound
+// set the object's source to the file path for the animal
+// to get the animal ("dog", "horse", etc) access the eng property, which 
+// was assigned to the sound icon when the icon was made in the big loop
+// this keyword: in any function this is the thing that called the function,
+// in this case the sound icon, so this.eng is the english name ("horse", etc.)
+// concatenate the file path to the correct MP3
+// pause() the audio object, in case a sound is already playing
+// then call the play() method on the audio object. This plays the sound
 
 // sortAnimals() runs on change to select menu:
 function sortAnimals() {
