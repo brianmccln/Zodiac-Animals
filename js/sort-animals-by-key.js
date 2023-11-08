@@ -67,12 +67,12 @@ function renderAnimals() { // output the 12 animals to the section
         // Make an img and set the src to the sound icon in images folder.
         // every divvy needs the sound icon, same icon each time.
         // have the sound icon call a playSound() function when clicked.
-        // make a CSS class that positions the icon in the lower right corner of divvy
+        // assign 'sound-icon' class; this positions icon in lower corner of divvy
         // make the icon small enough so as not to crowd other elements, but big enough
         // so user can still tell it's a sound icon
         // each icon img needs an eng property assigned to it so that the function
         // can know which animal the icon belongs to
-        
+
     }); // end forEach()
 } // end renderAnimals() function
 
